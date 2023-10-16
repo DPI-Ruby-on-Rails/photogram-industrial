@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :follow_requests
   resources :comments
   resources :photos
+  get "/:username/like" => "users#liked", as: :liked
   get "/:username" => "users#show", as: :user
  
   
