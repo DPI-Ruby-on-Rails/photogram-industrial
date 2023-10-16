@@ -1,0 +1,7 @@
+ <%= render partial: "shared/tab" %>
+
+<ul class="list-group"> 
+ <% @user.leaders.each do |lead| %>
+  <li class="list-group-item"> <%= lead.username %></li>
+<% end %>
+</ul>
